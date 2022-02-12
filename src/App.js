@@ -1,10 +1,13 @@
 import './App.css';
-import Hoime from './Components/Home/Home';
+import Home from './Components/Home/Home';
+import PicturesContexProvider from './MyContex/PicturesContex';
 
 function App() {
   return (
     <div className="App">
-      <Hoime></Hoime>
+      <PicturesContexProvider>
+        <Home />
+      </PicturesContexProvider>
 
     </div>
   );
